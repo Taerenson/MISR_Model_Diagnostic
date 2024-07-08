@@ -12,7 +12,7 @@ Midlatitude Low Cloud WCTH: 1278.4 m
 
 Global High Cloud Fraction: 11.335 %
 
-Tropical Low Cloud Fraction in Regions of Strong Descent: 18.515
+Tropical Low Cloud Fraction in Regions of Strong Descent: 18.515 %
 
 
 For corrospondence or questions please contact myself at taerenso@uwyo.edu
