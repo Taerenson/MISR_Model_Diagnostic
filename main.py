@@ -5,7 +5,8 @@ import Diagnostic_calculations as DC
 
 ## Read in the MISR observations
 path = '[PATH TO MISR DATA]' # CHANGE ME
-ds = xr.open_mfdataset(path,use_cftime=True,engine='netcdf4').sel(time = slice('2001-02-01','2014-12-30')).load().rename({'clMISR':'clmisr'})
+ds = xr.open_mfdataset(path,use_cftime=True,engine='netcdf4').sel(time = slice('2001-02-01','2014-12-30')).load()
+ds = ds.rename({'clMISR':'clmisr'})  # This line is only necessary if the variable name != 'clmisr'
 dimlist = list(ds.dims)
 if 'alt16' in dimlist:
     ds = ds.rename({'alt16':'cth'}) # rename the cth dimension to match CMIP6 models
